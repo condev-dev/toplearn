@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>آموزش برنامه نویسی - تاپلرن</title>
+    <link rel="stylesheet" href="./css/Main.min.css">
+    <link rel="stylesheet" href="./css/Media.min.css">
+    <link rel="stylesheet" href="./css/font-awesome.css">
+    <link rel="icon" href="./Image/logo.svg" type="image/x-icon">
+</head>
+
+<body>
+
+    <!-- Start Header -->
+    <header class="header d-flex f-col">
+
+        <section class="Container">
+
+            <section class="d-flex Section-Menu">
+
+                <div class="Right-Menu d-flex">
+
+                    <div class="Logo">
+                        <a href="https://cv.condev.ir/">
+                            <img src="./Image/logo.svg" alt="TopLearn">
+                        </a>
+                    </div>
+
+                    <nav class="Menu">
+                        <ul class="Menu-menu d-flex">
+                            <li class="menu-item"> <a href="https://cv.condev.ir/" class="menu-link"> آخرین دوره ها </a> </li>
+                            <li class="menu-item"> <a href="https://cv.condev.ir/" class="menu-link"> معرفی مدرسین </a> </li>
+                            <li class="menu-item"> <a href="https://cv.condev.ir/" class="menu-link"> بلاگ </a> </li>
+                            <li class="menu-item"> <a href="https://cv.condev.ir/" class="menu-link"> پرسش و پاسخ </a> </li>
+                            <li class="menu-item"> <a href="https://cv.condev.ir/" class="menu-link"> درخواست مشاوره </a> </li>
+                            <li class="menu-item"> <a href="https://cv.condev.ir/" class="menu-link"> همکاری با تاپلرن </a> </li>
+                            <li class="menu-item"> <a href="https://cv.condev.ir/" class="menu-link"> تماس با ما </a> </li>
+                            <li class="menu-item"> <a href="https://cv.condev.ir/" class="menu-link"> درباره ما </a> </li>
+                        </ul>
+                    </nav>
+
+                    <div class="header-menu-berger">
+                        <i class="fa fa-bars"></i>
+                    </div>
+
+                    <div class="header-menu-search-icon">
+                        <i class="fa fa-search"></i>
+                    </div>
+
+                </div>
+
+                <div class="Left-Menu d-flex">
+                    <div class="Profile d-flex" onclick="showDropDownProfile()">
+                    <a class="ima-profile" href="https://cv.condev.ir/">
+                        <img class="ima-profile-image" src="./Image/44574944-f966-4129-b20f-d30da882d963.png" alt="">
+                        </a>
+                        <div class="information d-flex">
+                            <i class="fa fa-arrow-down"></i>
+                            <h3>علی رضایی</h3>
+                        </div>
+                        <ul class="drop-down-menu-profile ShowDropPrifile" id="DropDown">
+                            <li><a href="https://cv.condev.ir/"> مشاهده حساب کاربری </a></li>
+                            <li><a href="https://cv.condev.ir/"> ویرایش حساب کاربر </a></li>
+                            <li><a href="https://cv.condev.ir/"> تغییر رمز عبور </a></li>
+                            <li><a href="https://cv.condev.ir/"> کیف پول </a></li>
+                            <li><a href="https://cv.condev.ir/"> فاکتورهای من </a></li>
+                            <li><a href="https://cv.condev.ir/"> تیکت ها </a></li>
+                            <li><a href="https://cv.condev.ir/"> خروج از حساب کاربری </a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="header-menu-academi">
+                    <i class="fa fa-university"></i>
+                    <a href="https://cv.condev.ir/"> آکادمی تاپ لرن </a>
+                </div>
+
+            </section>
+
+            <section class="d-flex f-col Section-Title ">
+
+                <div class="Title">
+                    <h1> خودآموزی ، کسب تجربه ، ورود به بازار کار با تاپ لرن </h1>
+                    <h2> با کمترینــــ هزینه خودت حرفه ایــــ یاد بگیـر </h2>
+                </div>
+
+                <div class="Search">
+                    <input type="text" placeholder="چی میخوای یاد بگیری ؟">
+                    <i class="fa fa-search"></i>
+                </div>
+
+                <div class="Informations d-flex ">
+
+                    <article class="Informations-item d-flex ">
+                        <img src="./Image/stat-student.svg" alt="">
+                        <p> 265,803 </p>
+                        <h3>نفر دانشجو</h3>
+                    </article>
+
+                    <article class="Informations-item d-flex ">
+                        <img src="./Image/stat-teacher.svg" alt="">
+                        <p> 140 </p>
+                        <h3>مدرس مجرب</h3>
+                    </article>
+
+
+                    <article class="Informations-item d-flex ">
+                        <img src="./Image/stat-time.svg" alt="">
+                        <p> 245,208 </p>
+                        <h3>دقیقه آموزش</h3>
+                    </article>
+
+                </div>
+
+            </section>
+
+        </section>
+
+
+    </header>
+    <!-- End Header -->
+
+
+    <!-- Main Start -->
+    <main class="main">
+
+        <div class="Max-Width">
+            <section class="main-menu d-flex">
+
+                <div class="menu">
+                    <ul class="d-flex">
+                        <li> <a href="https://cv.condev.ir/"> برنامه نویسی و طراحی وب </a> </li>
+                        <li> <a href="https://cv.condev.ir/"> کمپ آموزشی </a> </li>
+                        <li> <a href="https://cv.condev.ir/"> آموزش برنامه نویسی به کودکان </a> </li>
+                        <li> <a href="https://cv.condev.ir/"> راهنمای ورود به دنیای برنامه نویسی </a> </li>
+                        <li> <a href="https://cv.condev.ir/"> دوره ی مخصوص ناشنوایان </a> </li>
+                    </ul>
+                </div>
+
+                <div class="icon d-flex">
+                    <i class="fa fa-university"></i>
+                    <b> آکادمی تاپ لرن </b>
+                </div>
+
+            </section>
+
+            <section class="main-intro row">
+
+                <div class="container d-flex">
+                    <a href="https://cv.condev.ir/"> <img src="./Image/rent2.png" alt=""></a>
+                    <a href="https://cv.condev.ir/"> <img src="./Image/WorkWithUs.png" alt=""></a>
+                    <a href="https://cv.condev.ir/"> <img src="./Image/Discount.png" alt=""></a>
+                    <a href="https://cv.condev.ir/"> <img src="./Image/Consult.png" alt=""></a>
+                </div>
+
+            </section>
+
+        </div>
+
+        <section class="main-LastCourses">
+
+            <div class="HeaderLastCourses d-flex">
+
+                <div class="title-section d-flex">
+                    <hr>
+                    <h2>آخرین دوره های تاپ لرن</h2>
+                </div>
+
+                <div class="AllCourses">
+                    <a href="https://cv.condev.ir/">مشاهده همه ی دوره ها</a>
+                    <i class="fa fa-arrow-left"></i>
+                </div>
+
+            </div>
+
+            <div class="ContainerLastCourses">
+
+                <div class="ContainerLastCourses-header">
+                    <a href="https://cv.condev.ir/"> برنامه نویسی و طراحی وب </a>
+                </div>
+
+                <div class="ContainerLastCourses-Boxs">
+
+
+                    <div class="Box-LastCourses">
+                        <a href="https://cv.condev.ir/" class="more"></a>
+                        <div class="off-section">10% <span>تخفیف</span></div>
+                        <img src="./Image/img-course-جمعه-۵-اردیبهشت-۱۳۹۹-34946869-574.jpg" alt="">
+
+                        <div class="title">
+
+                            <header>
+                                <a href="https://cv.condev.ir/">آموزش جامع رابط کاربری و تجربه کاربری</a>
+                            </header>
+
+                            <div class="profile">
+                                <i class="fa fa-user"></i>
+                                <p>زارعی</p>
+                            </div>
+
+                            <footer class="d-flex">
+                                <div class="Mony"> 300.000 تومان</div>
+                                <div class="Clock">
+                                    <i class="fa fa-clock-o"></i>
+                                    28:3:00
+                                </div>
+                            </footer>
+
+                        </div>
+                    </div>
+
+                    <div class="Box-LastCourses">
+                        <a href="https://cv.condev.ir/" class="more"></a>
+                        <img src="./Image/img-course-دو-شنبه-۱۵-اردیبهشت-۱۳۹۹-68465385-805.jpg" alt="">
+
+                        <div class="title">
+
+                            <header>
+                                <a href="https://cv.condev.ir/">دوره ی آموزش جاوااسکریپت</a>
+                            </header>
+
+                            <div class="profile">
+                                <i class="fa fa-user"></i>
+                                <p>مدائنی</p>
+                            </div>
+
+                            <footer class="d-flex">
+                                <div class="Mony">رایگانـ</div>
+                                <div class="Clock">
+                                    <i class="fa fa-clock-o"></i>
+                                    19:3:00
+                                </div>
+                            </footer>
+
+                        </div>
+                    </div>
+
+                    <div class="Box-LastCourses">
+                        <a href="https://cv.condev.ir/" class="more"></a>
+                        <div class="off-section">30% <span>تخفیف</span></div>
+                        <img src="./Image/img-course-دو-شنبه-۷-خرداد-۱۳۹۷-99311266-555.jpg" alt="">
+
+                        <div class="title">
+
+                            <header>
+                                <a href="https://cv.condev.ir/">آموزش طراحی سایت Html & Css</a>
+                            </header>
+
+                            <div class="profile">
+                                <i class="fa fa-user"></i>
+                                <p>خسروجردی</p>
+                            </div>
+
+                            <footer class="d-flex">
+                                <div class="Mony"> رایگانـ</div>
+                                <div class="Clock">
+                                    <i class="fa fa-clock-o"></i>
+                                    40:3:00
+                                </div>
+                            </footer>
+
+                        </div>
+                    </div>
+
+                    <div class="Box-LastCourses">
+                        <a href="https://cv.condev.ir/" class="more"></a>
+                        <div class="off-section">60% <span>تخفیف</span></div>
+                        <img src="./Image/c9bd9904-67c5-458d-86e6-ae87e26327c3azure.png" alt="">
+
+                        <div class="title">
+
+                            <header>
+                                <a href="https://cv.condev.ir/">دوره ی مقدماتی تا پیشرفته ماکروسافت آزرو</a>
+                            </header>
+
+                            <div class="profile">
+                                <i class="fa fa-user"></i>
+                                <p>تاتاری</p>
+                            </div>
+
+                            <footer class="d-flex">
+                                <div class="Mony"> رایگانـ</div>
+                                <div class="Clock">
+                                    <i class="fa fa-clock-o"></i>
+                                    28:3:00
+                                </div>
+                            </footer>
+
+                        </div>
+                    </div>
+
+                    <div class="Box-LastCourses">
+                        <a href="https://cv.condev.ir/" class="more"></a>
+                        <img src="./Image/7541684a-0a51-4ce5-9052-5a71fd32295bAA_آمــوزش_ساخت_بازی.png" alt="">
+
+                        <div class="title">
+
+                            <header>
+                                <a href="https://cv.condev.ir/">آموزش ساخت بازی با AA</a>
+                            </header>
+
+                            <div class="profile">
+                                <i class="fa fa-user"></i>
+                                <p>زارعی</p>
+                            </div>
+
+                            <footer class="d-flex">
+                                <div class="Mony"> 30.000 تومان</div>
+                                <div class="Clock">
+                                    <i class="fa fa-clock-o"></i>
+                                    2:8:00
+                                </div>
+                            </footer>
+
+                        </div>
+                    </div>
+
+                    <div class="Box-LastCourses">
+                        <a href="https://cv.condev.ir/" class="more"></a>
+                        <div class="off-section">20% <span>تخفیف</span></div>
+                        <img src="./Image/1d7fcae7-5d30-4156-abae-aab8c8a58535آموزش_رایگان_پایتون.png" alt="">
+
+                        <div class="title">
+
+                            <header>
+                                <a href="https://cv.condev.ir/">آموزش رایگان مقدماتی تا پیشرفته پایتون</a>
+                            </header>
+
+                            <div class="profile">
+                                <i class="fa fa-user"></i>
+                                <p>خسروجردی</p>
+                            </div>
+
+                            <footer class="d-flex">
+                                <div class="Mony"> 250.000 تومان</div>
+                                <div class="Clock">
+                                    <i class="fa fa-clock-o"></i>
+                                    80:3:00
+                                </div>
+                            </footer>
+
+                        </div>
+                    </div>
+
+                    <div class="Box-LastCourses">
+                        <a href="https://cv.condev.ir/" class="more"></a>
+                        <div class="off-section">30% <span>تخفیف</span></div>
+                        <img src="./Image/img-course-دو-شنبه-۲۵-فروردین-۱۳۹۹-82836702-1292.jpg" alt="">
+
+                        <div class="title">
+
+                            <header>
+                                <a href="https://cv.condev.ir/">دوره ی آموزش Html & Css رایگان</a>
+                            </header>
+
+                            <div class="profile">
+                                <i class="fa fa-user"></i>
+                                <p>خسروجردی</p>
+                            </div>
+
+                            <footer class="d-flex">
+                                <div class="Mony"> رایگانـ</div>
+                                <div class="Clock">
+                                    <i class="fa fa-clock-o"></i>
+                                    20:0:00
+                                </div>
+                            </footer>
+
+                        </div>
+                    </div>
+
+                    <div class="Box-LastCourses">
+                        <a href="https://cv.condev.ir/" class="more"></a>
+                        <img src="./Image/8e43e222-bc1e-406e-8597-ea8ea9385ec9PHP-learning-compressor.png" alt="">
+
+                        <div class="title">
+
+                            <header>
+                                <a href="https://cv.condev.ir/">آموزش ساخت وبسایت فروشگاهی</a>
+                            </header>
+
+                            <div class="profile">
+                                <i class="fa fa-user"></i>
+                                <p>اردوخانی</p>
+                            </div>
+
+                            <footer class="d-flex">
+                                <div class="Mony"> 300.000 تومان</div>
+                                <div class="Clock">
+                                    <i class="fa fa-clock-o"></i>
+                                    30:9:00
+                                </div>
+                            </footer>
+
+                        </div>
+                    </div>
+
+                    <div class="Box-LastCourses">
+                        <a href="https://cv.condev.ir/" class="more"></a>
+                        <div class="off-section">70% <span>تخفیف</span></div>
+                        <img src="./Image/c9bd9904-67c5-458d-86e6-ae87e26327c3azure.png" alt="">
+
+                        <div class="title">
+
+                            <header>
+                                <a href="https://cv.condev.ir/">دوره ی ساخت برنامه با سی شارپ</a>
+                            </header>
+
+                            <div class="profile">
+                                <i class="fa fa-user"></i>
+                                <p>مدائنی</p>
+                            </div>
+
+                            <footer class="d-flex">
+                                <div class="Mony"> رایگانـ</div>
+                                <div class="Clock">
+                                    <i class="fa fa-clock-o"></i>
+                                    18:5:00
+                                </div>
+                            </footer>
+
+                        </div>
+                    </div>
+
+                    <div class="Box-LastCourses">
+                        <a href="https://cv.condev.ir/" class="more"></a>
+                        <div class="off-section">20% <span>تخفیف</span></div>
+                        <img src="./Image/e356beaf-5b56-49cd-921f-1d288678611bآموزش_جامع_نرم_افزار_متلب.png" alt="">
+
+                        <div class="title">
+
+                            <header>
+                                <a href="https://cv.condev.ir/">آموزش جامع نرم افزار متلب</a>
+                            </header>
+
+                            <div class="profile">
+                                <i class="fa fa-user"></i>
+                                <p>زارعی</p>
+                            </div>
+
+                            <footer class="d-flex">
+                                <div class="Mony"> 800.000 تومان</div>
+                                <div class="Clock">
+                                    <i class="fa fa-clock-o"></i>
+                                    40:00:00
+                                </div>
+                            </footer>
+
+                        </div>
+                    </div>
+
+                    <div class="Box-LastCourses">
+                        <a href="https://cv.condev.ir/" class="more"></a>
+                        <img src="./Image/0ff2cb7e-1e6a-4f3d-92e9-9eef4ce419f2پروژه_فول_استک_سایت_فیلم_و_پنل_ادمین_Next.js_دوره_پیشرفته.png"
+                            alt="">
+
+                        <div class="title">
+
+                            <header>
+                                <a href="https://cv.condev.ir/">آموزش پیشرفته Next.js رایگان</a>
+                            </header>
+
+                            <div class="profile">
+                                <i class="fa fa-user"></i>
+                                <p>صادق زاده</p>
+                            </div>
+
+                            <footer class="d-flex">
+                                <div class="Mony"> 400.000 تومان</div>
+                                <div class="Clock">
+                                    <i class="fa fa-clock-o"></i>
+                                    22:00:00
+                                </div>
+                            </footer>
+
+                        </div>
+                    </div>
+
+                    <div class="Box-LastCourses">
+                        <a href="https://cv.condev.ir/" class="more"></a>
+                        <img src="./Image/06-30-2021کدام_یک_سریع_تر_است_UDP_و_TCP_مقایسه.png" alt="">
+
+                        <div class="title">
+
+                            <header>
+                                <a href="https://cv.condev.ir/">مقایسه Tcp با Udp کدام سریع تر است ؟</a>
+                            </header>
+
+                            <div class="profile">
+                                <i class="fa fa-user"></i>
+                                <p>زارعی</p>
+                            </div>
+
+                            <footer class="d-flex">
+                                <div class="Mony"> 50.000 تومان</div>
+                                <div class="Clock">
+                                    <i class="fa fa-clock-o"></i>
+                                    3:20:00
+                                </div>
+                            </footer>
+
+                        </div>
+                    </div>
+
+                    <div class="Box-LastCourses">
+                        <a href="https://cv.condev.ir/" class="more"></a>
+                        <img src="./Image/07-26-2021نکاتـــی_برای_ساخت_نمونه_کارهای_عـــالی.png" alt="">
+
+                        <div class="title">
+
+                            <header>
+                                <a href="https://cv.condev.ir/">نکاتی برای ساخت نمونه کار های عالی</a>
+                            </header>
+
+                            <div class="profile">
+                                <i class="fa fa-user"></i>
+                                <p>زارعی</p>
+                            </div>
+
+                            <footer class="d-flex">
+                                <div class="Mony"> 150.000 تومان</div>
+                                <div class="Clock">
+                                    <i class="fa fa-clock-o"></i>
+                                    5:03:00
+                                </div>
+                            </footer>
+
+                        </div>
+                    </div>
+
+                    <div class="Box-LastCourses">
+                        <a href="https://cv.condev.ir/" class="more"></a>
+                        <div class="off-section">70% <span>تخفیف</span></div>
+                        <img src="./Image/1d7fcae7-5d30-4156-abae-aab8c8a58535آموزش_رایگان_پایتون.png" alt="">
+
+                        <div class="title">
+
+                            <header>
+                                <a href="https://cv.condev.ir/">آموزش سی شارپ از مقدماتی</a>
+                            </header>
+
+                            <div class="profile">
+                                <i class="fa fa-user"></i>
+                                <p>مدائنی</p>
+                            </div>
+
+                            <footer class="d-flex">
+                                <div class="Mony"> رایگانـ</div>
+                                <div class="Clock">
+                                    <i class="fa fa-clock-o"></i>
+                                    78:00:00
+                                </div>
+                            </footer>
+
+                        </div>
+                    </div>
+
+                    <div class="Box-LastCourses">
+                        <a href="https://cv.condev.ir/" class="more"></a>
+                        <div class="off-section">20% <span>تخفیف</span></div>
+                        <img src="./Image/af068497-8da9-4f3c-ae9b-243597308fb8webdesign.png" alt="">
+
+                        <div class="title">
+
+                            <header>
+                                <a href="https://cv.condev.ir/">طراحی 12 پروژه عملی وب سایت</a>
+                            </header>
+
+                            <div class="profile">
+                                <i class="fa fa-user"></i>
+                                <p>اخلاق پسند</p>
+                            </div>
+
+                            <footer class="d-flex">
+                                <div class="Mony"> 300.000 تومان</div>
+                                <div class="Clock">
+                                    <i class="fa fa-clock-o"></i>
+                                    28:3:00
+                                </div>
+                            </footer>
+
+                        </div>
+                    </div>
+
+                    <div class="Box-LastCourses">
+                        <a href="https://cv.condev.ir/" class="more"></a>
+                        <div class="off-section">50% <span>تخفیف</span></div>
+                        <img src="./Image/a2c414ea-fed4-4906-8738-0051f0e0b437آموزش_جامــع_رابط_کاربری_و_تجربه_کاربری.png"
+                            alt="">
+
+                        <div class="title">
+
+                            <header>
+                                <a href="https://cv.condev.ir/">آموزش جامع رابط کاربری و تجربه کاربری</a>
+                            </header>
+
+                            <div class="profile">
+                                <i class="fa fa-user"></i>
+                                <p>صالحی</p>
+                            </div>
+
+                            <footer class="d-flex">
+                                <div class="Mony"> 150.000 تومان</div>
+                                <div class="Clock">
+                                    <i class="fa fa-clock-o"></i>
+                                    15:02:00
+                                </div>
+                            </footer>
+
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="Suggested-course">
+
+            <section class="title d-flex">
+
+                <div class="title-section d-flex">
+                    <hr>
+                    <h2>دوره های پیشنهادی تاپ لرن</h2>
+                </div>
+
+                <div class="Lines d-flex">
+                    <hr>
+                    <hr>
+                </div>
+
+            </section>
+
+
+            <section class="Courses ">
+
+                <div class="Box-LastCourses">
+                    <a href="https://cv.condev.ir/" class="more"></a>
+                    <div class="off-section">70% <span>تخفیف</span></div>
+                    <img src="./Image/img-course-جمعه-۵-اردیبهشت-۱۳۹۹-34946869-574.jpg" alt="">
+
+                    <div class="title">
+
+                        <header>
+                            <a href="https://cv.condev.ir/">آموزش جامع رابط کاربری و تجربه کاربری</a>
+                        </header>
+
+                        <div class="profile">
+                            <i class="fa fa-user"></i>
+                            <p>زارعی</p>
+                        </div>
+
+                        <footer class="d-flex">
+                            <div class="Mony"> 300.000 تومان</div>
+                            <div class="Clock">
+                                <i class="fa fa-clock-o"></i>
+                                28:3:00
+                            </div>
+                        </footer>
+
+                    </div>
+                </div>
+
+                <div class="Box-LastCourses">
+                    <a href="https://cv.condev.ir/" class="more"></a>
+                    <img src="./Image/img-course-دو-شنبه-۱۵-اردیبهشت-۱۳۹۹-68465385-805.jpg" alt="">
+
+                    <div class="title">
+
+                        <header>
+                            <a href="https://cv.condev.ir/">دوره ی آموزش جاوااسکریپت</a>
+                        </header>
+
+                        <div class="profile">
+                            <i class="fa fa-user"></i>
+                            <p>مدائنی</p>
+                        </div>
+
+                        <footer class="d-flex">
+                            <div class="Mony">رایگانـ</div>
+                            <div class="Clock">
+                                <i class="fa fa-clock-o"></i>
+                                19:3:00
+                            </div>
+                        </footer>
+
+                    </div>
+                </div>
+
+                <div class="Box-LastCourses">
+                    <a href="https://cv.condev.ir/" class="more"></a>
+                    <img src="./Image/img-course-دو-شنبه-۷-خرداد-۱۳۹۷-99311266-555.jpg" alt="">
+
+                    <div class="title">
+
+                        <header>
+                            <a href="https://cv.condev.ir/">آموزش طراحی سایت Html & Css</a>
+                        </header>
+
+                        <div class="profile">
+                            <i class="fa fa-user"></i>
+                            <p>خسروجردی</p>
+                        </div>
+
+                        <footer class="d-flex">
+                            <div class="Mony"> رایگانـ</div>
+                            <div class="Clock">
+                                <i class="fa fa-clock-o"></i>
+                                40:3:00
+                            </div>
+                        </footer>
+
+                    </div>
+                </div>
+
+                <div class="Box-LastCourses">
+                    <a href="https://cv.condev.ir/" class="more"></a>
+                    <img src="./Image/c9bd9904-67c5-458d-86e6-ae87e26327c3azure.png" alt="">
+
+                    <div class="title">
+
+                        <header>
+                            <a href="https://cv.condev.ir/">دوره ی مقدماتی تا پیشرفته ماکروسافت آزرو</a>
+                        </header>
+
+                        <div class="profile">
+                            <i class="fa fa-user"></i>
+                            <p>تاتاری</p>
+                        </div>
+
+                        <footer class="d-flex">
+                            <div class="Mony"> رایگانـ</div>
+                            <div class="Clock">
+                                <i class="fa fa-clock-o"></i>
+                                28:3:00
+                            </div>
+                        </footer>
+
+                    </div>
+                </div>
+
+            </section>
+
+        </section>
+
+        <section class="LastCourse-Layer">
+            <img class="Left-Image parallax" src="./Image/left-parallax.svg">
+            <img class="Right-Image parallax" src="./Image/right-parallax.svg">
+
+            <div class="Container">
+
+                <section class="title d-flex">
+
+                    <div class="title-section d-flex">
+                        <hr>
+                        <h2>آخرین مقالات تاپ لرن</h2>
+                    </div>
+
+                    <div class="AllCourses">
+                        <a href="https://cv.condev.ir/">مشاهده همه ی دوره ها</a>
+                        <i class="fa fa-arrow-left"></i>
+                    </div>
+
+                </section>
+
+                <section class="Container-Box">
+
+                    <div class="Box-LastArticle">
+
+                        <div class="Image-Layer">
+                            <img src="./Image/a2c414ea-fed4-4906-8738-0051f0e0b437آموزش_جامــع_رابط_کاربری_و_تجربه_کاربری.png"
+                                alt="">
+
+                            <div class="Hover">
+                                <button> مشاهده کامل مقاله </button>
+                            </div>
+                        </div>
+
+                        <div class="Box-Text">
+                            <a href="https://cv.condev.ir/" class="Title">نقشه راه توسعه دهنده وب در سال 2021</a>
+                            <p class="Description"> آیا شما هم قصد تبدیل شدن به یک توسعه دهنده وب را دارید؟ در این مطلب
+                                قصد داریم
+                                نقشه راه کاملی برای تبدیل شدن به یک توسعه دهنده وب را به شما ارائه دهیم.</p>
+                        </div>
+
+                        <div class="Detail d-flex">
+
+                            <div class="Right">
+                                <i class="fa fa-eye"> 464 </i>
+                                <i class="fa fa-comment"> 0 </i>
+                            </div>
+
+                            <div class="Left">
+
+                                <a href="https://cv.condev.ir/">
+                                    <i class="fa fa-user"></i>
+                                    ایمان مدائنی
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="Box-LastArticle">
+
+                        <div class="Image-Layer">
+                            <img src="./Image/0ff2cb7e-1e6a-4f3d-92e9-9eef4ce419f2پروژه_فول_استک_سایت_فیلم_و_پنل_ادمین_Next.js_دوره_پیشرفته.png"
+                                alt="">
+
+                            <div class="Hover">
+                                <button> مشاهده کامل مقاله </button>
+                            </div>
+                        </div>
+
+                        <div class="Box-Text">
+                            <a href="https://cv.condev.ir/" class="Title">نکاتی برای راهاندازی مشاغل فریلنسر</a>
+                            <p class="Description"> کار فریلنسری می‌تواند راهی فوق‌العاده برای کسب درآمد باشد. اما اگر به
+                                روش صحیح آن را انجام
+                                ندهید، می‌تواند بسیار دشوار باشد.
+                            </p>
+                        </div>
+
+                        <div class="Detail d-flex">
+
+                            <div class="Right">
+                                <i class="fa fa-eye"> 552 </i>
+                                <i class="fa fa-comment"> 6 </i>
+                            </div>
+
+                            <div class="Left">
+
+                                <a href="https://cv.condev.ir/">
+                                    <i class="fa fa-user"></i>
+                                    ایمان مدائنی
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="Box-LastArticle">
+
+                        <div class="Image-Layer">
+                            <img src="./Image/54223441-4a28-4d6d-a132-29923ab1d787android.png" alt="">
+
+                            <div class="Hover">
+                                <button> مشاهده کامل مقاله </button>
+                            </div>
+                        </div>
+
+                        <div class="Box-Text">
+                            <a href="https://cv.condev.ir/" class="Title">12 مهارت لازم برای توسعه دهندگان در سال 2021</a>
+                            <p class="Description"> آیا شما هم قصد تبدیل شدن به یک توسعه دهنده وب را دارید؟ در این مطلب
+                                شما چه در حال حاضر یک توسعه دهنده باتجربه باشید یا تازه شروع به کار کرده باشید، اگر
+                                می‌خواهید در این صنعت واقعا موفق باشید، باید مهارت‌های خود را به طور مداوم تقویت کنید تا
+                                منسوخ نشوید. در اینجا برخی از ارزشمندترین مهارت‌های توسعه‌دهندگان در سال 2021 را بیان
+                                کرده ایم.
+                            </p>
+                        </div>
+
+                        <div class="Detail d-flex">
+
+                            <div class="Right">
+                                <i class="fa fa-eye"> 861 </i>
+                                <i class="fa fa-comment"> 25 </i>
+                            </div>
+
+                            <div class="Left">
+
+                                <a href="https://cv.condev.ir/">
+                                    <i class="fa fa-user"></i>
+                                    ایمان مدائنی
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="Box-LastArticle">
+
+                        <div class="Image-Layer">
+                            <img src="./Image/07-14-2021مزایای_نمونه_ســازی_اولیه_چیست.png" alt="">
+
+                            <div class="Hover">
+                                <button> مشاهده کامل مقاله </button>
+                            </div>
+                        </div>
+
+                        <div class="Box-Text">
+                            <a href="https://cv.condev.ir/" class="Title">5 مورد از بهترین فریم ورک های تایپ اسکریپت در سال 2021 </a>
+                            <p class="Description"> آیا شما هم قصد تبدیل شدن به یک توسعه دهنده وب را دارید؟ در این مطلب
+                                همه ما از محبوبیت و رشد فریم‌ورک های NodeJS وJavaScript اطلاع داریم. اما آیا فریم
+                                ورک‌های خاص تایپ اسکریپت را هم می‌شناسید؟
+                            </p>
+                        </div>
+
+                        <div class="Detail d-flex">
+
+                            <div class="Right">
+                                <i class="fa fa-eye"> 779 </i>
+                                <i class="fa fa-comment"> 0 </i>
+                            </div>
+
+                            <div class="Left">
+
+                                <a href="https://cv.condev.ir/">
+                                    <i class="fa fa-user"></i>
+                                    ایمان مدائنی
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="Box-LastArticle">
+
+                        <div class="Image-Layer">
+                            <img src="./Image/0ff2cb7e-1e6a-4f3d-92e9-9eef4ce419f2پروژه_فول_استک_سایت_فیلم_و_پنل_ادمین_Next.js_دوره_پیشرفته.png"
+                                alt="">
+
+                            <div class="Hover">
+                                <button> مشاهده کامل مقاله </button>
+                            </div>
+                        </div>
+
+
+                        <div class="Box-Text">
+                            <a href="https://cv.condev.ir/" class="Title">فریم ورک‌ها و کتابخانه‌های CSS برای پروژه بعدی شما</a>
+                            <p class="Description">
+                                بارها این را شنیده ایم، سال 2020 عصر اتومبیل‌های پرنده است، اما بسیاری از توسعه‌دهندگان
+                                front-end هنوز با موقعیت div ها مشکل دارند. خنده دار به نظر می‌رسد اما واقعیت است.
+                            </p>
+                        </div>
+
+                        <div class="Detail d-flex">
+
+                            <div class="Right">
+                                <i class="fa fa-eye"> 442 </i>
+                                <i class="fa fa-comment"> 0 </i>
+                            </div>
+
+                            <div class="Left">
+
+                                <a href="https://cv.condev.ir/">
+                                    <i class="fa fa-user"></i>
+                                    ایمان مدائنی
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="Box-LastArticle">
+
+                        <div class="Image-Layer">
+                            <img src="./Image/07-26-2021نکاتـــی_برای_ساخت_نمونه_کارهای_عـــالی.png" alt="">
+
+                            <div class="Hover">
+                                <button> مشاهده کامل مقاله </button>
+                            </div>
+                        </div>
+
+                        <div class="Box-Text">
+                            <a href="https://cv.condev.ir/" class="Title">اکسل چیست و افراد مسلط به اکسل چقدر حقوق می گیرند؟</a>
+                            <p class="Description">
+                                در این مقاله پس از معرفی نرم افزار اکسل به بررسی جدیدترین آگهی های استخدامی و تخمین
+                                میزان حقوق دریافتی افراد مسلط به اکسل می پردازیم.
+                            </p>
+                        </div>
+
+                        <div class="Detail d-flex">
+
+                            <div class="Right">
+                                <i class="fa fa-eye"> 4402 </i>
+                                <i class="fa fa-comment"> 0 </i>
+                            </div>
+
+                            <div class="Left">
+
+                                <a href="https://cv.condev.ir/">
+                                    <i class="fa fa-user"></i>
+                                    ایمان مدائنی
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </section>
+
+        <section class="Suggested-course">
+
+            <section class="title d-flex">
+
+                <div class="title-section d-flex">
+                    <hr>
+                    <h2>دوره های محبوب تاپ لرن</h2>
+                </div>
+
+            </section>
+
+
+            <section class="Courses ">
+
+
+                <div class="Box-LastCourses">
+                    <a href="https://cv.condev.ir/" class="more"></a>
+                    <div class="off-section">10% <span>تخفیف</span></div>
+                    <img src="./Image/img-course-جمعه-۵-اردیبهشت-۱۳۹۹-34946869-574.jpg" alt="">
+
+                    <div class="title">
+
+                        <header>
+                            <a href="https://cv.condev.ir/">آموزش جامع رابط کاربری و تجربه کاربری</a>
+                        </header>
+
+                        <div class="profile">
+                            <i class="fa fa-user"></i>
+                            <p>زارعی</p>
+                        </div>
+
+                        <footer class="d-flex">
+                            <div class="Mony"> 300.000 تومان</div>
+                            <div class="Clock">
+                                <i class="fa fa-clock-o"></i>
+                                28:3:00
+                            </div>
+                        </footer>
+
+                    </div>
+                </div>
+
+                <div class="Box-LastCourses">
+                    <a href="https://cv.condev.ir/" class="more"></a>
+                    <img src="./Image/img-course-دو-شنبه-۱۵-اردیبهشت-۱۳۹۹-68465385-805.jpg" alt="">
+
+                    <div class="title">
+
+                        <header>
+                            <a href="https://cv.condev.ir/">دوره ی آموزش جاوااسکریپت</a>
+                        </header>
+
+                        <div class="profile">
+                            <i class="fa fa-user"></i>
+                            <p>مدائنی</p>
+                        </div>
+
+                        <footer class="d-flex">
+                            <div class="Mony">رایگانـ</div>
+                            <div class="Clock">
+                                <i class="fa fa-clock-o"></i>
+                                19:3:00
+                            </div>
+                        </footer>
+
+                    </div>
+                </div>
+
+                <div class="Box-LastCourses">
+                    <a href="https://cv.condev.ir/" class="more"></a>
+                    <div class="off-section">30% <span>تخفیف</span></div>
+                    <img src="./Image/img-course-دو-شنبه-۷-خرداد-۱۳۹۷-99311266-555.jpg" alt="">
+
+                    <div class="title">
+
+                        <header>
+                            <a href="https://cv.condev.ir/">آموزش طراحی سایت Html & Css</a>
+                        </header>
+
+                        <div class="profile">
+                            <i class="fa fa-user"></i>
+                            <p>خسروجردی</p>
+                        </div>
+
+                        <footer class="d-flex">
+                            <div class="Mony"> رایگانـ</div>
+                            <div class="Clock">
+                                <i class="fa fa-clock-o"></i>
+                                40:3:00
+                            </div>
+                        </footer>
+
+                    </div>
+                </div>
+
+                <div class="Box-LastCourses">
+                    <a href="https://cv.condev.ir/" class="more"></a>
+                    <div class="off-section">60% <span>تخفیف</span></div>
+                    <img src="./Image/c9bd9904-67c5-458d-86e6-ae87e26327c3azure.png" alt="">
+
+                    <div class="title">
+
+                        <header>
+                            <a href="https://cv.condev.ir/">دوره ی مقدماتی تا پیشرفته ماکروسافت آزرو</a>
+                        </header>
+
+                        <div class="profile">
+                            <i class="fa fa-user"></i>
+                            <p>تاتاری</p>
+                        </div>
+
+                        <footer class="d-flex">
+                            <div class="Mony"> رایگانـ</div>
+                            <div class="Clock">
+                                <i class="fa fa-clock-o"></i>
+                                28:3:00
+                            </div>
+                        </footer>
+
+                    </div>
+                </div>
+
+                <div class="Box-LastCourses">
+                    <a href="https://cv.condev.ir/" class="more"></a>
+                    <img src="./Image/7541684a-0a51-4ce5-9052-5a71fd32295bAA_آمــوزش_ساخت_بازی.png" alt="">
+
+                    <div class="title">
+
+                        <header>
+                            <a href="https://cv.condev.ir/">آموزش ساخت بازی با AA</a>
+                        </header>
+
+                        <div class="profile">
+                            <i class="fa fa-user"></i>
+                            <p>زارعی</p>
+                        </div>
+
+                        <footer class="d-flex">
+                            <div class="Mony"> 30.000 تومان</div>
+                            <div class="Clock">
+                                <i class="fa fa-clock-o"></i>
+                                2:8:00
+                            </div>
+                        </footer>
+
+                    </div>
+                </div>
+
+                <div class="Box-LastCourses">
+                    <a href="https://cv.condev.ir/" class="more"></a>
+                    <div class="off-section">20% <span>تخفیف</span></div>
+                    <img src="./Image/1d7fcae7-5d30-4156-abae-aab8c8a58535آموزش_رایگان_پایتون.png" alt="">
+
+                    <div class="title">
+
+                        <header>
+                            <a href="https://cv.condev.ir/">آموزش رایگان مقدماتی تا پیشرفته پایتون</a>
+                        </header>
+
+                        <div class="profile">
+                            <i class="fa fa-user"></i>
+                            <p>خسروجردی</p>
+                        </div>
+
+                        <footer class="d-flex">
+                            <div class="Mony"> 250.000 تومان</div>
+                            <div class="Clock">
+                                <i class="fa fa-clock-o"></i>
+                                80:3:00
+                            </div>
+                        </footer>
+
+                    </div>
+                </div>
+
+                <div class="Box-LastCourses">
+                    <a href="https://cv.condev.ir/" class="more"></a>
+                    <div class="off-section">30% <span>تخفیف</span></div>
+                    <img src="./Image/img-course-دو-شنبه-۲۵-فروردین-۱۳۹۹-82836702-1292.jpg" alt="">
+
+                    <div class="title">
+
+                        <header>
+                            <a href="https://cv.condev.ir/">دوره ی آموزش Html & Css رایگان</a>
+                        </header>
+
+                        <div class="profile">
+                            <i class="fa fa-user"></i>
+                            <p>خسروجردی</p>
+                        </div>
+
+                        <footer class="d-flex">
+                            <div class="Mony"> رایگانـ</div>
+                            <div class="Clock">
+                                <i class="fa fa-clock-o"></i>
+                                20:0:00
+                            </div>
+                        </footer>
+
+                    </div>
+                </div>
+
+                <div class="Box-LastCourses">
+                    <a href="https://cv.condev.ir/" class="more"></a>
+                    <div class="off-section">10% <span>تخفیف</span></div>
+                    <img src="./Image/img-course-جمعه-۵-اردیبهشت-۱۳۹۹-34946869-574.jpg" alt="">
+
+                    <div class="title">
+
+                        <header>
+                            <a href="https://cv.condev.ir/">آموزش جامع رابط کاربری و تجربه کاربری</a>
+                        </header>
+
+                        <div class="profile">
+                            <i class="fa fa-user"></i>
+                            <p>زارعی</p>
+                        </div>
+
+                        <footer class="d-flex">
+                            <div class="Mony"> 300.000 تومان</div>
+                            <div class="Clock">
+                                <i class="fa fa-clock-o"></i>
+                                28:3:00
+                            </div>
+                        </footer>
+
+                    </div>
+                </div>
+
+            </section>
+
+        </section>
+
+        <section class="newsletter-layer">
+
+            <div class="Container d-flex">
+
+                <div class="Form">
+                    <form action="#">
+                        <input type="text" placeholder="شماره موبایل">
+                        <input type="text" placeholder="پست الکترونیک شما">
+                        <input type="submit" value="عضویت در خبرنامه">
+                    </form>
+                </div>
+
+                <div class="picture">
+                    <img src="./Image/logo2.png" alt="">
+                    <img src="./Image/logo3.png" alt="">
+                </div>
+
+                <div class="footer d-flex">
+
+                    <div class="menu">
+                        <ul>
+                            <li><a href="https://cv.condev.ir/"> مرجع تخصصی برنامه نویسان </a></li>
+                            <li><a href="https://cv.condev.ir/"> آموزشگاه برنامه نویسان </a></li>
+                            <li><a href="https://cv.condev.ir/"> قالب رایگان </a></li>
+                            <li><a href="https://cv.condev.ir/"> سفارش پروژه </a></li>
+                            <li><a href="https://cv.condev.ir/"> گت ورک و کسب درآمد </a></li>
+                            <li><a href="https://cv.condev.ir/"> موتور جستجو </a></li>
+                        </ul>
+                    </div>
+
+                    <div class="social-media d-flex">
+                        <a class="box-container d-flex" href="https://instagram.com/con.dev" target="_blank" rel="noopener"> <i class="fa fa-instagram"></i> </a>
+                        <a class="box-container d-flex" href="https://github.com/condev-dev" target="_blank" rel="noopener"> <i class="fa fa-github"></i> </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="copyrith">
+            <p>تمامی حقوق مادی و معنوی این سایت متعلق به تاپ لرن می باشد و هرگونه کپی برداری غیرقانونی محسوب خواهد شد
+            </p>
+        </section>
+
+    </main>
+    <!-- Main End -->
+<!-- Start JavaScript -->
+
+    <script>
+        function showDropDownProfile() {
+            var DropDown = document.getElementById("DropDown");
+            if (DropDown.className === "drop-down-menu-profile") {
+                DropDown.className += " ShowDropPrifile"
+            } else {
+                DropDown.className = "drop-down-menu-profile";
+            }
+        }
+    </script>
+
+    <!-- End JavaScript -->
+
+
+</body>
+
+</html>

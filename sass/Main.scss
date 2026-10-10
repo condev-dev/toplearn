@@ -1,0 +1,1038 @@
+@import url(../css/font-awesome.min.css);
+
+$ColorBlue: #00b3e9;
+$ColorWhite: #fff;
+$ColorBlack: #1e2f38;
+$ColorDark: black;
+$ColorLine: #9ee3fa;
+$ColorGreen: #6fc341;
+$Font: 'IRANSansWeb',
+tahoma;
+
+@mixin TextStyleHeader {
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+@mixin Centering {
+    align-items: center;
+    justify-content: center;
+}
+
+@font-face {
+    font-family: 'IRANSansWeb';
+    src: url(../Fonts/IRANSans-font/IRANSansWeb.ttf) format(ttf);
+    src: url(../Fonts/IRANSans-font/IRANSansWeb.eot) format(eot),
+        url(../Fonts/IRANSans-font/IRANSansWeb.woff) format(woff),
+        url(../Fonts/IRANSans-font/IRANSANSExpanded.woff2) format(woff2);
+}
+
+@mixin StyleBergerAndSearchIcon {
+    color: white;
+    font-size: 20px;
+    margin: 20px;
+    cursor: pointer;
+    position: relative;
+    display: none;
+    transition: all .5s;
+
+    ::after {
+        content: '|';
+        position: absolute;
+        left: -15px;
+        top: 2px;
+        color: rgb(211, 211, 211);
+    }
+
+    &:hover {
+        color: $ColorBlue;
+    }
+}
+
+@mixin ThreePoints {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.d-flex {
+    display: flex;
+}
+
+.f-row {
+    flex-direction: row;
+}
+
+.f-col {
+    flex-direction: column;
+}
+
+.f-row {
+    width: 100%;
+    display: flex;
+}
+
+// Style For Title
+.title-section {
+    @include Centering();
+    justify-content: flex-start;
+
+    hr {
+        background-color: $ColorBlue;
+        border: none;
+        border-radius: 10px;
+        width: 90px;
+        height: 5px;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 55px;
+            height: 100%;
+            background-color: $ColorLine;
+        }
+    }
+
+    h2 {
+        color: $ColorDark;
+        font-size: 20px;
+        margin-right: 10px;
+        font-weight: bolder;
+        letter-spacing: -1px;
+    }
+}
+
+.AllCourses {
+    margin-left: 40px;
+
+    a {
+        font-weight: 100;
+
+        &:hover {
+            color: $ColorBlue;
+        }
+    }
+
+    i {
+        font-size: 17px;
+        color: $ColorBlue;
+        margin-right: 10px;
+        cursor: pointer;
+    }
+}
+
+// Style For Box
+.Box-LastCourses {
+    position: relative;
+    height: 330px;
+    width: 285.500px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    margin: 15px;
+
+    .more::before {
+        width: 100%;
+        height: 55px;
+        content: '';
+        right: -5px;
+        top: -1px;
+        background: url(../Image/more.svg) no-repeat right top;
+        z-index: 100;
+        background-size: contain;
+        position: absolute;
+    }
+
+    .more {
+        opacity: .4;
+    }
+
+    .off-section {
+        position: absolute;
+        left: -52px;
+        top: 10px;
+        margin-top: 2px;
+        background-color: red;
+        padding: 0 15px;
+        color: white;
+        z-index: 800;
+        border-radius: 0 15px 15px 0;
+        font-size: 13px;
+        transition: all .4s;
+    }
+
+    &:hover .more {
+        opacity: 1;
+    }
+
+    &:hover .Box-LastCourses::before {
+        background-color: red;
+    }
+
+    &:hover .off-section {
+        left: 0;
+    }
+
+    img {
+        width: 100%;
+        height: 180px;
+        cursor: pointer;
+
+
+    }
+
+    .title {
+        width: 100%;
+        height: 130px;
+        padding: 0px 15px;
+
+        header {
+            @include ThreePoints();
+            font-size: 14px;
+            font-weight: 100;
+            text-align: right;
+            cursor: pointer;
+            padding: 10px 0;
+            height: calc(calc(130px / 3) -20px);
+        }
+
+        .profile {
+            @include ThreePoints();
+            display: inline-block;
+            width: 100%;
+            padding-bottom: 10px;
+            padding-top: 5px;
+            border-bottom: 2px solid rgba(30, 47, 56, .1);
+            height: calc(calc(130px / 3) - 20px);
+            box-sizing: content-box;
+
+            i {
+                color: #d2dbdf;
+                cursor: pointer;
+            }
+
+            p {
+                color: #909a9e;
+                display: inline-block;
+                margin-right: 5px;
+                font-weight: 100;
+                cursor: pointer;
+                transition: color .3s;
+
+                &:hover {
+                    color: rgb(9, 212, 9);
+                }
+            }
+        }
+
+        footer {
+            width: 100%;
+            justify-content: space-between;
+            padding: 15px 0;
+            height: calc(calc(130px / 3) - 30px);
+
+
+            .Mony {
+                color: $ColorGreen;
+                order: 1;
+            }
+
+            .Clock {
+                color: $ColorBlue;
+            }
+        }
+    }
+}
+
+//Style For Next Bot
+.Box-LastArticle {
+    width: 393.328px;
+    height: 385px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.10);
+    position: relative;
+    margin: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+
+    .Image-Layer {
+
+        img {
+            width: 100%;
+            height: 220px;
+        }
+
+        &:hover .Hover {
+            opacity: 1;
+        }
+
+        .Hover {
+            opacity: 0;
+            height: 220px;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            transition: all .5s;
+            display: flex;
+            background-color: rgba(0, 0, 0, 0.6);
+            @include Centering();
+
+            button {
+                padding: 12px 20px;
+                background-color: transparent;
+                border: 1px solid $ColorWhite;
+                color: $ColorWhite;
+                font-size: 15px;
+                font-weight: bolder;
+                transition: all .4s;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: rgba(255, 255, 255, .8);
+                    color: #313131;
+                }
+            }
+        }
+
+    }
+
+    .Box-Text {
+        padding: 0 15px;
+
+        .Title {
+            @include ThreePoints();
+            display: block;
+            font-weight: bolder;
+            margin-top: 10px;
+        }
+
+        .Description {
+            color: #686e71;
+            font-size: 14px;
+            font-weight: 500;
+            text-align: justify;
+            margin-top: 15px;
+            line-height: 28px;
+            overflow: hidden;
+            height: 60px;
+        }
+    }
+
+    .Detail {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        justify-content: space-between;
+
+        .Left {
+            margin: 10px 15px;
+            font-size: 14px;
+
+            a {
+                color: $ColorBlue;
+
+            }
+        }
+
+        .Right {
+            margin: 10px;
+            color: #697174;
+            font-size: 14px;
+
+            i:nth-child(2) {
+                margin-right: 10px;
+            }
+        }
+    }
+
+
+}
+
+body {
+    font-size: 15px;
+    color: $ColorBlack;
+    font-family: $Font;
+    direction: rtl;
+}
+
+a {
+    text-decoration: none;
+    color: $ColorBlack;
+    transition: .3s;
+
+    &:hover {
+        color: $ColorBlue;
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+// header Start
+.header {
+
+    width: 100%;
+    height: 700px;
+    background: url(../Image/landing.jpg) no-repeat center;
+    background-size: cover;
+    align-items: center;
+    overflow: hidden;
+
+    .Container {
+        width: 1270px;
+        height: 100%;
+
+        .Section-Menu {
+            width: 100%;
+            height: 15%;
+            padding: 18px 30px;
+            justify-content: space-around;
+            align-items: center;
+
+            .Right-Menu {
+                width: 80%;
+                height: 100%;
+                display: flex;
+                justify-content: flex-start;
+
+                .Logo {
+                    width: 10%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    transition: all .5s;
+
+                    img {
+                        width: 80px;
+                    }
+                }
+
+                .Menu {
+                    width: 90%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+
+                    &-menu {
+                        list-style: none;
+
+                        &-berger {
+                            @include StyleBergerAndSearchIcon();
+                        }
+
+                        &-search-icon {
+                            @include StyleBergerAndSearchIcon();
+                        }
+
+                        &-academi {
+                            color: $ColorWhite;
+                            display: none;
+                            font-size: 14px;
+
+                            a {
+                                color: $ColorWhite;
+                                margin-right: 5px;
+                            }
+                        }
+
+                        .menu-item {
+                            cursor: pointer;
+                            padding: 10px;
+                        }
+
+                        a {
+                            @include TextStyleHeader;
+                            position: relative;
+
+                            &::before {
+                                content: '';
+                                width: 0;
+                                transition: width .3s;
+                            }
+
+                            &:hover::before {
+                                background-color: $ColorBlue;
+                                position: absolute;
+                                top: -20px;
+                                right: 0;
+                                width: 100%;
+                                height: 2px;
+                                border-radius: 5px;
+                                box-shadow: 0 0 10px $ColorBlue;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .Left-Menu {
+                width: 20%;
+                height: 100%;
+                position: relative;
+                @include Centering();
+
+                .Profile {
+
+                    .ima-profile {
+                        order: 1;
+
+                        &-image {
+                            border-radius: 50%;
+                            border: 2px solid rgba(255, 255, 255, 0.4);
+                            box-shadow: 0 0 5px $ColorWhite;
+                            width: 50px;
+                            height: 50px;
+                        }
+
+
+                    }
+
+                    .information {
+                        @include TextStyleHeader;
+                        font-size: 11px;
+                        margin: 15px;
+                        font-weight: 100;
+                        cursor: pointer;
+                        transition: color .5s;
+
+                        &:hover {
+                            color: $ColorBlue;
+                        }
+
+                        i {
+                            margin: 5px;
+                        }
+
+                    }
+
+                    .drop-down-menu-profile {
+                        position: absolute;
+                        top: 90px;
+                        left: 25px;
+                        background-color: $ColorWhite;
+                        border-radius: 5px;
+                        padding: 15px 10px;
+                        box-shadow: 0 0 5px $ColorWhite;
+
+                        li {
+                            font-size: 13px;
+                            padding: 8px 20px 0 15px;
+                            margin-right: -15px;
+                            list-style-position: inside;
+                            list-style-type: disc;
+                            color: #6fc341;
+
+                            a:hover {
+                                color: #6fc341;
+                            }
+                        }
+                    }
+
+                }
+
+            }
+        }
+
+
+        .Section-Title {
+            width: 100%;
+            height: 85%;
+            align-items: center;
+            justify-content: space-around;
+
+            .Title {
+                color: $ColorWhite;
+                text-align: center;
+
+                h1 {
+                    font-size: 28px;
+                    font-weight: 100;
+                    letter-spacing: -1px;
+                }
+
+                h2 {
+                    font-size: 25px;
+                    font-weight: 100;
+                    line-height: 60px;
+                    letter-spacing: -1px;
+                }
+            }
+
+            .Search {
+
+                background-color: rgba(255, 255, 255, .1);
+                border-radius: 50px;
+                position: relative;
+
+                input {
+                    padding: 17px 25px 17px 360px;
+                    border-radius: 30px;
+                    border: none;
+                    outline: none;
+                    margin: 10px;
+
+                    &::placeholder {
+                        font-size: 15px;
+                        color: $ColorBlack;
+                        font-family: $Font;
+                    }
+                }
+
+                i {
+                    position: absolute;
+                    color: $ColorBlue;
+                    font-size: 20px;
+                    top: 5px;
+                    left: 10px;
+                    cursor: pointer;
+                    transition: all .5s;
+                    padding: 20px;
+
+                    &:hover {
+                        color: $ColorBlack;
+                    }
+                }
+
+            }
+
+            .Informations {
+                @include Centering();
+                margin-bottom: 30px;
+
+                &-item {
+                    @include Centering();
+                    margin: 0 -50px;
+                    flex-direction: column;
+                    text-align: center;
+                    color: white;
+
+                    img {
+                        width: 50%;
+                        height: 50%;
+                    }
+
+                    h3 {
+                        font-size: 15px;
+                        font-weight: 100;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    &-menu {
+        list-style: none;
+
+        &-berger {
+            @include StyleBergerAndSearchIcon();
+        }
+
+        &-search-icon {
+            @include StyleBergerAndSearchIcon();
+
+        }
+
+        &-academi {
+            color: $ColorWhite;
+            display: none;
+            font-size: 14px;
+
+            a {
+                color: $ColorWhite;
+                margin-right: 5px;
+            }
+        }
+
+        .menu-item {
+            margin-top: 20px;
+            cursor: pointer;
+            padding: 10px;
+        }
+
+        .menu a {
+            @include TextStyleHeader;
+            position: relative;
+            padding-bottom: 30px;
+
+            &::before {
+                content: '';
+                width: 0;
+                transition: width .3s;
+            }
+
+            &:hover::before {
+                background-color: $ColorBlue;
+                position: absolute;
+                top: -20px;
+                right: 0;
+                width: 100%;
+                height: 2px;
+                border-radius: 5px;
+                box-shadow: 0 0 10px $ColorBlue;
+            }
+        }
+    }
+}
+
+.ShowDropPrifile {
+    display: none !important;
+}
+
+// header End
+
+
+// Main Start
+.main {
+    height: 200px;
+    width: 100%;
+    padding-bottom: 1000px;
+
+
+    &-menu {
+        @include Centering();
+        justify-content: space-around !important;
+        width: 100%;
+        height: 80px;
+
+        .menu {
+            margin-right: -100px;
+
+            ul {
+                li {
+                    padding: 15px;
+                }
+            }
+
+        }
+
+        .icon {
+            margin-left: -200px;
+            color: $ColorBlue;
+            font-size: 17px;
+
+            i {
+                padding-left: 10px;
+            }
+        }
+    }
+
+    &-intro {
+        width: 100%;
+        padding: 10px;
+        @include Centering();
+        border-top: 1px solid rgba(30, 47, 56, .1);
+
+        .container {
+            @include Centering();
+            width: 100%;
+            flex-wrap: wrap;
+
+            a {
+                width: calc(100% / 4);
+                height: auto;
+
+                img {
+                    width: 100%;
+                    padding: 10px;
+                }
+            }
+
+        }
+
+    }
+
+    &-LastCourses {
+        overflow: hidden;
+
+        .HeaderLastCourses {
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        .ContainerLastCourses {
+            width: 1270px;
+            margin: 0 auto;
+            margin-top: 25px;
+
+
+            &-header {
+                position: relative;
+                right: 15px;
+                width: 160px;
+                padding-bottom: 15px;
+                font-size: 15px;
+                font-weight: 100;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    width: 100%;
+                    height: 3px;
+                    background-color: $ColorBlue;
+                }
+            }
+
+            &-Boxs {
+                width: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                overflow: hidden;
+            }
+        }
+
+    }
+
+    .Suggested-course {
+        justify-content: space-between;
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 60px;
+        overflow: hidden;
+
+
+        .title {
+            justify-content: space-between;
+            align-items: center;
+            margin-right: 0px;
+
+            .Lines {
+                margin-left: 20px;
+
+                hr {
+                    width: 50px;
+                    height: 6px;
+                    border: 4px solid $ColorBlue;
+                    border-radius: 10px;
+
+                }
+
+                hr:nth-child(1) {
+                    width: 30px;
+                    margin-left: 10px;
+                }
+
+            }
+        }
+
+        .Courses {
+            margin-top: 10px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            overflow: hidden;
+        }
+
+    }
+
+    .LastCourse-Layer {
+        width: 100%;
+        background: url(../Image/article-pattern.png) repeat 0 0 #f6f9fa;
+        height: 1000px;
+        margin-top: 100px;
+        position: relative;
+
+        //images left and right
+        .parallax {
+            width: 160px;
+            height: 500px;
+        }
+
+        .Left-Image {
+            position: absolute;
+            left: 0;
+            top: 60px;
+        }
+
+        .Right-Image {
+            position: absolute;
+            right: 0;
+            bottom: 60px;
+        }
+
+        //End
+
+        .Container {
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+            top: 60px;
+
+
+            .title {
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            &-Box {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                overflow: hidden;
+                margin-top: 30px;
+            }
+        }
+
+    }
+
+    .newsletter-layer {
+        width: 100%;
+        padding: 47px 0 45px;
+        margin: 50px 0;
+        background: url(../Image/footer-pattern.png) repeat 0 0 #153248;
+
+        .Container {
+            justify-content: space-between;
+            align-items: flex;
+            width: 100%;
+            margin: 0 auto;
+            position: relative;
+
+            .Form {
+                form {
+                    border: 3px dashed #334d60;
+                    border-radius: 8px;
+                    padding: 17px;
+
+
+                    input {
+                        background-color: $ColorWhite;
+                        border: none;
+                        outline: none;
+                        margin: -6px;
+                        border-radius: 5px;
+
+                        &:focus {
+                            outline: 2px solid black;
+                        }
+
+                        &::placeholder {
+                            font-size: 15px;
+                            font-family: $Font;
+                        }
+                    }
+
+                    input[type=text] {
+                        width: 350.625px;
+                        height: 45px;
+                        padding-right: 20px;
+                        z-index: 1;
+                        position: relative;
+
+                        &:nth-child(2) {
+                            border-top-left-radius: 0px;
+                            border-bottom-left-radius: 0px;
+                        }
+                    }
+
+                    input[type=submit] {
+                        width: 150.625px;
+                        height: 45px;
+                        background-color: $ColorGreen;
+                        font-size: 15px;
+                        font-family: $Font;
+                        color: $ColorWhite;
+                        z-index: 0;
+                        outline: none;
+                        cursor: pointer;
+
+                        &:hover {
+                            background-color: #61b832;
+                        }
+                    }
+                }
+            }
+
+            .picture {
+                img {
+                    height: 130px;
+                    width: 110px;
+                    border-radius: 10px;
+                    background-color: $ColorWhite;
+                    margin: 20px;
+                    cursor: pointer;
+                }
+            }
+
+            .footer {
+                position: absolute;
+                bottom: -45px;
+                height: 50px;
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
+
+                .menu {
+                    ul {
+                        li {
+                            display: inline-block;
+                            margin: 0 10px;
+
+                            a {
+                                color: $ColorWhite;
+                                font-size: 13px;
+
+                                &:hover {
+                                    color: $ColorBlue;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .social-media {
+                    .box-container {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        background-color: #23425a;
+                        cursor: pointer;
+                        color: $ColorWhite;
+                        @include Centering();
+                        margin: 5px;
+                        font-size: 17px;
+                        transition: all .5s;
+
+                        &:hover {
+                            background-color: #335671;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .copyrith
+    {
+        margin-top: -20px;
+        padding-bottom: 10px;
+        
+        p
+        {
+            color: $ColorBlack;
+            font-size: 14px;
+            text-align: center;
+            font-weight: 100;
+        }
+    }
+
+
+}
+
+// Main End

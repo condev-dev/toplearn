@@ -1,0 +1,825 @@
+@media (max-width: 1200px) {
+
+    .header {
+        .Container {
+            width: 970px;
+
+            .Section-Menu {
+                // background-color: red;
+                flex-direction: column;
+                // padding: 18px 0;
+                padding: 0;
+                padding-top: 50px;
+
+                .Right-Menu {
+                    width: 100%;
+                    // margin-top: 50px;
+                }
+
+                .Left-Menu {
+                    // background-color: aqua;
+                    width: 30%;
+                    align-self: flex-end;
+                }
+            }
+
+
+
+
+        }
+    }
+
+    .main {
+
+        &-menu {
+
+            .menu {
+                margin-right: 0px !important;
+            }
+
+            .icon {
+                display: none !important;
+            }
+
+        }
+
+        &-LastCourses {
+            .ContainerLastCourses {
+                width: 970px;
+
+                &-Boxs {
+                    grid-template-columns: 1fr 1fr 1fr;
+                }
+            }
+        }
+
+        .Suggested-course {
+            width: 970px;
+            margin: auto;
+            margin-top: 60px;
+
+            .Courses {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+
+        .LastCourse-Layer {
+            .Container {
+                width: 970px;
+
+            }
+        }
+
+        .newsletter-layer {
+            padding: 0 30px;
+            height: 267px;
+
+            .Container {
+                position: relative;
+                top: 40px;
+
+                .Form {
+                    form {
+                        input[type=text] {
+                            width: 220.625px;
+                        }
+                    }
+                }
+
+                .footer {}
+            }
+        }
+
+    }
+
+    .Box-LastArticle {
+        width: 293.328px;
+    }
+
+}
+
+@media (max-width: 992px) {
+
+    .header {
+        height: 368px;
+
+        .Container {
+            width: 750px;
+
+            .Section-Menu {
+                flex-direction: row;
+                justify-content: flex-start;
+                padding: 0;
+                margin-top: 20px;
+
+                .Right-Menu {
+                    width: calc(35% - 50px);
+                    height: 100%;
+
+                    .Menu {
+                        display: none;
+                    }
+
+                    .Logo {
+                        padding-right: 50px;
+                        padding-top: 7px;
+
+                        img {
+                            width: 60px;
+                        }
+                    }
+
+
+
+                }
+
+                .Left-Menu {
+                    width: 20%;
+                    height: 100%;
+
+                    .Profile {
+                        margin-top: 7px;
+
+                        .ima-profile {
+
+                            &-image {
+                                width: 45px;
+                                height: 45px;
+                            }
+
+                            .information {
+                                font-size: 10px;
+
+                            }
+
+                        }
+
+                        .drop-down-menu-profile {
+                            width: 180px;
+                            z-index: 2;
+                            left: -18px;
+                            top: 70px;
+                        }
+                    }
+
+                }
+
+            }
+
+            .Section-Title {
+                height: auto;
+                margin: 20px 0;
+                padding: 20px 0;
+
+                .Informations {
+                    display: none;
+                }
+
+                .Title {
+                    margin: 20px 0;
+
+                    h1 {
+                        font-size: 24px;
+                    }
+
+                    h2 {
+                        font-size: 21px;
+                    }
+                }
+
+
+            }
+
+        }
+
+        &-menu {
+
+            &-berger {
+                display: inline-block;
+                margin-right: 50px;
+                margin-top: 15px;
+            }
+
+            &-search-icon {
+                display: inline-block;
+                margin-top: 15px;
+            }
+
+            &-academi {
+                display: inline-block;
+                margin-right: 270px;
+            }
+        }
+
+    }
+
+    .main {
+
+        &-menu {
+            display: none;
+        }
+
+        &-intro {
+
+            .container {
+                padding: 0 100px;
+
+                a {
+                    width: calc(100% / 2);
+                    height: auto;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+            }
+        }
+
+        &-LastCourses {
+            .ContainerLastCourses {
+                width: 100%;
+
+
+                &-Boxs {
+                    grid-template-columns: 1fr 1fr;
+                }
+            }
+        }
+
+        .Suggested-course {
+            margin-top: 60px;
+            width: 100%;
+
+            .Courses {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .LastCourse-Layer {
+            height: 1450px;
+
+            .Left-Image {
+                display: none;
+            }
+
+            .right-Image {
+                display: none;
+            }
+
+            .Container {
+                width: 100%;
+
+                &-Box {
+
+                    grid-template-columns: 1fr 1fr;
+
+                }
+            }
+        }
+
+        .newsletter-layer {
+            padding: 0 30px;
+            height: 467px;
+
+            .Container {
+                flex-direction: column;
+                align-items: center;
+
+                .Form {
+                    form {
+                        input[type=text] {
+                            width: 250.625px;
+                        }
+                    }
+                }
+
+                .footer {
+                    flex-direction: column;
+                    align-items: center;
+
+                    .menu {
+                        margin: 30px;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+
+    }
+
+    .Box-LastCourses {
+        width: 40vw;
+        margin-right: 40px;
+    }
+
+    .Box-LastArticle {
+        width: 40vw;
+        margin-right: 5vw;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .header {
+
+        .Container {
+
+            .Section-Menu {
+
+                .Right-Menu {
+                    margin-right: 80px;
+                }
+
+            }
+
+
+        }
+
+        &-menu {
+
+            &-academi {
+                margin: auto;
+                font-size: 13px;
+            }
+        }
+
+    }
+
+    .main {
+
+        &-intro {
+            .container {
+                padding: 0 !important;
+
+                a {
+                    width: calc(100% / 2);
+                    height: auto;
+
+                    img {
+                        width: 100%;
+                    }
+                }
+
+            }
+
+            &-LastCourses {
+                .ContainerLastCourses {
+
+                    &-Boxs {
+                        grid-template-columns: 1fr 1fr !important;
+                    }
+                }
+            }
+        }
+
+        .newsletter-layer {
+            padding: 0 30px;
+            height: 467px;
+
+            .Container {
+
+                .Form {
+                    form {
+                        input {
+                            display: inline-block;
+                        }
+
+                        input[type=text] {
+                            width: 30vw;
+
+                            &::placeholder {
+                                font-size: 13px;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+
+
+    }
+
+    .Box-LastCourses {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .header {
+
+        .Container {
+
+            .Section-Menu {
+
+                .Right-Menu {
+                    margin-right: 175px;
+
+                    .Logo {
+
+                        img {
+                            width: 55px;
+                        }
+                    }
+
+
+
+                }
+
+                .Left-Menu {
+                    .Profile {
+
+                        .ima-profile {
+
+                            &-image {
+                                width: 40px;
+                                height: 40px;
+                            }
+
+
+                        }
+                    }
+
+                }
+
+            }
+
+            .Section-Title {
+
+                .Title {
+                    margin: 20px 0;
+
+                    h1 {
+                        font-size: 21px;
+                    }
+
+                    h2 {
+                        font-size: 19px;
+                    }
+                }
+
+                .Search {
+
+                    input {
+                        width: 100px;
+                    }
+                }
+
+            }
+
+
+        }
+
+        &-menu {
+
+            &-academi {
+                display: none !important;
+            }
+        }
+    }
+
+    .main {
+
+        &-LastCourses {
+            .ContainerLastCourses {
+                width: 90vw !important;
+
+                &-Boxs {
+                    grid-template-columns: 1fr !important;
+                }
+            }
+
+            .HeaderLastCourses {
+                flex-direction: column !important;
+
+                .AllCourses {
+                    margin-right: 60px;
+                    margin-top: 10px;
+                }
+            }
+        }
+
+        .Suggested-course {
+            margin-top: 40px;
+            width: 90vw !important;
+
+            .title {
+                margin-top: 50px;
+
+                h2 {
+                    font-size: 15px;
+                }
+
+                hr:nth-child(1) {
+                    width: 70px;
+                }
+
+                .Lines {
+                    display: none;
+                }
+            }
+
+            .Courses {
+                grid-template-columns: 1fr !important;
+
+
+                .title {
+                    margin-top: 0px;
+                }
+            }
+        }
+
+        .LastCourse-Layer {
+
+            height: 2700px;
+
+            .Container {
+
+                .title {
+                    .AllCourses {
+                        display: none;
+                    }
+
+                }
+
+                &-Box {
+
+                    grid-template-columns: 1fr;
+
+                }
+            }
+        }
+
+        .newsletter-layer {
+            padding: 0 30px;
+            height: 420px;
+
+            .Container {
+
+                .Form {
+                    form {
+                        display: none;
+                    }
+                }
+
+                .picture {
+                    img {
+                        width: 90px;
+                        height: 110px;
+                        margin: 10px;
+                    }
+                }
+
+            }
+        }
+
+
+    }
+
+    .Box-LastCourses {
+        width: 100% !important;
+        margin: 15px auto;
+    }
+
+    .Box-LastArticle {
+        width: 80vw;
+        margin-right: 10vw;
+    }
+
+
+
+}
+
+@media (max-width:444px) {
+    .header {
+
+        .Container {
+
+            .Section-Menu {
+
+                .Right-Menu {
+                    margin-right: 205px;
+                    margin-left: -30px;
+
+
+                }
+
+                .Left-Menu {
+                    .Profile {
+                        margin-top: 10px;
+                        margin-left: 50px;
+
+                        .information {
+                            font-size: 10px;
+                        }
+
+                        .ima-profile {
+                            &-image {
+                                width: 35px;
+                                height: 35px;
+                                margin-top: 5px;
+                            }
+
+
+                        }
+
+                        .drop-down-menu-profile {
+                            margin-left: 20px;
+                            width: 170px;
+                            left: -2%;
+
+                            li {
+                                font-size: 12px;
+
+                            }
+                        }
+                    }
+
+                }
+
+            }
+
+            .Section-Title {
+
+                .Title {
+                    margin: 20px 0;
+
+                    h1 {
+                        font-size: 16px;
+                    }
+
+                    h2 {
+                        font-size: 15px;
+                    }
+                }
+
+                .Search {
+                    margin-top: 10px;
+
+                    input {
+                        width: 50px;
+                        padding: 15px 150px;
+                    }
+                }
+
+            }
+
+
+        }
+
+        &-menu {
+
+            &-academi {
+                display: none !important;
+            }
+
+            &-berger {
+                font-size: 15px;
+                margin-top: 20px;
+                margin-right: 35px;
+                margin-left: 1px;
+
+            }
+
+            &-search-icon {
+                font-size: 15px;
+                margin-top: 20px;
+                margin-left: -80px;
+            }
+        }
+    }
+}
+
+
+
+// For Container 1270 Max 
+
+@media (min-width: 1280px) {
+
+    .main {
+        .Max-Width {
+            width: 1270px;
+            margin: 0 auto;
+        }
+
+        &-LastCourses {
+            width: 1270px;
+            margin: 0 auto;
+        }
+
+        .Suggested-course {
+            width: 1270px;
+        }
+
+        .LastCourse-Layer {
+            .Container {
+                width: 1270px;
+            }
+        }
+
+        .newsletter-layer {
+            .Container {
+                width: 1270px;
+            }
+        }
+    }
+}
+
+
+// Small screens: the header container was locked at 750px below 992px, so on
+// phones its contents were clipped and the search field collapsed to 0 width.
+// These rules make the header fluid and give the search field its text back.
+@media (max-width: 768px) {
+
+    .header {
+        .Container {
+            width: 100%;
+            padding: 0 12px;
+
+            .Section-Menu {
+                height: auto;
+                min-height: 56px;
+                padding: 14px 0 0;
+                justify-content: space-between;
+                align-items: center;
+
+                .Right-Menu {
+                    width: auto;
+                    margin-right: 0;
+                    margin-left: 0;
+                    justify-content: flex-start;
+                    align-items: center;
+                    gap: 10px;
+
+                    .Logo {
+                        width: auto;
+                        padding: 0 6px 0 0;
+
+                        img {
+                            width: 58px;
+                        }
+                    }
+
+                    .header-menu-berger,
+                    .header-menu-search-icon {
+                        display: inline-block;
+                        margin: 0;
+                        font-size: 18px;
+                    }
+                }
+
+                .Left-Menu {
+                    width: auto;
+                    height: auto;
+
+                    .Profile {
+                        display: flex;
+                        align-items: center;
+                        margin: 0;
+
+                        .ima-profile {
+                            &-image {
+                                width: 38px;
+                                height: 38px;
+                            }
+                        }
+
+                        .information {
+                            display: flex;
+                            align-items: center;
+                            margin: 0 8px;
+
+                            h3 {
+                                font-size: 11px;
+                                font-weight: 100;
+                                white-space: nowrap;
+                            }
+                        }
+
+                        .drop-down-menu-profile {
+                            left: 0;
+                            right: auto;
+                            top: 56px;
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+
+            .Section-Title {
+                .Search {
+                    width: 100%;
+
+                    input {
+                        width: 100%;
+                        margin: 10px 0;
+                        padding: 15px 20px 15px 52px;
+                    }
+                }
+            }
+        }
+    }
+}
