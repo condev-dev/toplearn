@@ -1,0 +1,22 @@
+{
+  "name": "آکادمی تاپ لرن — آموزش برنامه نویسی",
+  "short_name": "تاپ لرن",
+  "lang": "fa-IR",
+  "dir": "rtl",
+  "start_url": "/",
+  "scope": "/",
+  "theme_color": "#00b3e9",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/Image/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/Image/favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+# robots.txt — https://toplearn.condev.ir/
+User-agent: *
+Allow: /
+
+Sitemap: https://toplearn.condev.ir/sitemap.xml
