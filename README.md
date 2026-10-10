@@ -111,7 +111,7 @@ Designed with **clean spacing, a real RTL layout, a full-width photo hero, smoot
 
 | Path | Description |
 | --- | --- |
-| `Index.html` | The whole landing page markup: header, hero, course grids, articles, newsletter and footer |
+| `index.html` | The whole landing page markup: header, hero, course grids, articles, newsletter and footer |
 | `sass/Main.scss` | Color tokens, fonts, mixins, layout and every component state |
 | `sass/Media.scss` | Hand-written responsive rules for each breakpoint |
 | `css/Main.min.css` | Compiled main stylesheet |
@@ -137,10 +137,10 @@ Designed with **clean spacing, a real RTL layout, a full-width photo hero, smoot
 ```bash
 git clone https://github.com/condev-dev/toplearn.git
 cd toplearn
-open Index.html
+open index.html
 ```
 
-No install, no build, no dependencies. Just open `Index.html` in a browser.
+No install, no build, no dependencies. Just open `index.html` in a browser.
 The SCSS sources are already compiled — only re-compile them if you edit `sass/Main.scss` or `sass/Media.scss`.
 
 ---
